@@ -9,6 +9,24 @@ function nilaiPeserta (nilai) {
     */
 }
 
+var nilaiPeserta = prompt('Silahkan masukkan nilai yang kamu peroleh untuk mengetahui klasifikasi nilai: ','20-100');
+
+switch(true){
+    case (nilaiPeserta >= 80) :
+        document.write('Nilai kamu masuk klasifikasi A')
+        break
+    case (nilaiPeserta >= 60) :
+        document.write('Nilai kamu masuk klasifikasi B')
+        break
+    case (nilaiPeserta >= 40) :
+        document.write('Nilai kamu masuk Klasifikasi C')
+        break
+    case (nilaiPeserta>=20) :
+        document.write('Nilai kamu masuk Klasifikasi D')
+    default :
+        document.write('Nilaimu belum mencukupi')
+
+
 var dataSiswa = [
     ["Jojo", 55.5, nilaiPeserta(nilai)],
     ["Andika", 70.1, nilaiPeserta(nilai)],
@@ -17,3 +35,4 @@ var dataSiswa = [
 ];
 
 //Silahkan gunakan proses perulangan untuk mengambil semua data array dataSiswa dan tampilkan outputnya.
+
