@@ -12,19 +12,21 @@ function nilaiPeserta (nilai) {
 var nilaiPeserta = prompt('Silahkan masukkan nilai yang kamu peroleh untuk mengetahui klasifikasi nilai: ','20-100');
 
 switch(true){
-    case (nilaiPeserta >= 80) :
+    case (nilaiPeserta > 80 && nilaiPeserta <= 100) :
         document.write('Nilai kamu masuk klasifikasi A')
         break
-    case (nilaiPeserta >= 60) :
+    case (nilaiPeserta > 60 && nilaiPeserta <= 80) :
         document.write('Nilai kamu masuk klasifikasi B')
         break
-    case (nilaiPeserta >= 40) :
+    case (nilaiPeserta > 40 && nilaiPeserta <= 60) :
         document.write('Nilai kamu masuk Klasifikasi C')
         break
-    case (nilaiPeserta >= 20) :
+    case (nilaiPeserta > 20 && nilaiPeserta <= 40) :
         document.write('Nilai kamu masuk Klasifikasi D')
+        break
     default :
         document.write('Nilaimu belum mencukupi')
+}
 
 
 var dataSiswa = [
