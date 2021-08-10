@@ -21,11 +21,11 @@ switch(true){
     case (nilaiPeserta >= 40) :
         document.write('Nilai kamu masuk Klasifikasi C')
         break
-    case (nilaiPeserta>=20) :
+    case (nilaiPeserta >= 20) :
         document.write('Nilai kamu masuk Klasifikasi D')
     default :
         document.write('Nilaimu belum mencukupi')
-
+}
 
 /*
     Silahkan panggil fungsi nilaiPeserta dengan parameter beberapa nilai: 
