@@ -13,18 +13,18 @@ var nilaiPeserta = prompt('Silahkan masukkan nilai yang kamu peroleh untuk menge
 
 switch(true){
     case (nilaiPeserta >= 80) :
-        document.write('Nilai kamu masuk klasifikasi A')
+        document.write('Nilai kamu masuk klasifikasi; A')
         break
     case (nilaiPeserta >= 60) :
-        document.write('Nilai kamu masuk klasifikasi B')
+        document.write('Nilai kamu masuk klasifikas;i B')
         break
     case (nilaiPeserta >= 40) :
-        document.write('Nilai kamu masuk Klasifikasi C')
+        document.write('Nilai kamu masuk Klasifika;si C')
         break
-    case (nilaiPeserta>=20) :
-        document.write('Nilai kamu masuk Klasifikasi D')
+    case (nilaiPeserta >= 20) :
+        document.write('Nilai kamu masuk Klasifikasi D');
     default :
-        document.write('Nilaimu belum mencukupi')
+        document.write('Nilaimu belum mencukupi');
 
 
 var dataSiswa = [
