@@ -1,3 +1,5 @@
+//Q1
+
 function nilaiPeserta (nilai) {
     /* 
         Buat proses seleksi kondisi untuk melakukan klasifikasi nilai peserta dengan rincian:
@@ -10,7 +12,6 @@ function nilaiPeserta (nilai) {
 }
 
 var nilaiPeserta = prompt('Silahkan masukkan nilai yang kamu peroleh untuk mengetahui klasifikasi nilai: ','20-100');
-
 switch(true){
     case (nilaiPeserta > 80 && nilaiPeserta <= 100) :
         document.write('Nilai kamu masuk klasifikasi A')
@@ -28,6 +29,22 @@ switch(true){
         document.write('Nilaimu belum mencukupi')
 }
 
+//alternatif
+if (nilai > 80 && nilai <= 100) {
+    return "A";
+} else if (nilai > 60 && nilai <= 80) {
+    return "B";
+} else if (nilai > 40 && nilai <= 60) {
+    return "C";
+} else if (nilai > 20 && nilai <= 40) {
+    return "D";
+} else if (nilai >= 0 && nilai <= 20) {
+    return "E";
+} else {
+    return "Nilai tidak valid";
+}
+
+//Q2
 
 var dataSiswa = [
     ["Jojo", 55.5, nilaiPeserta(nilai)],
@@ -38,3 +55,16 @@ var dataSiswa = [
 
 //Silahkan gunakan proses perulangan untuk mengambil semua data array dataSiswa dan tampilkan outputnya.
 
+for (var i = 0, l1 = dataSiswa.length; i < l1; i++) {
+    for (var j = 0, l2 = dataSiswa[i].length; j < l2; j++) {
+        if(j==0){
+            document.write('Nama : ' + dataSiswa[i][j], '<br>')
+        }
+        if(j==1){
+            document.write('Nilai angka : ' + dataSiswa[i][j], '<br>')
+        }
+        if(j==2){
+            document.write('Nilai huruf : ' + dataSiswa[i][j], '<br>')
+        }
+    }
+}
