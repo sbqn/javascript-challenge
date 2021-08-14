@@ -23,6 +23,7 @@ switch(true){
         break
     case (nilaiPeserta >= 20) :
         document.write('Nilai kamu masuk Klasifikasi D')
+        break
     default :
         document.write('Nilaimu belum mencukupi')
 }
@@ -35,3 +36,4 @@ switch(true){
     4. 50
     5. 101
 */
+
